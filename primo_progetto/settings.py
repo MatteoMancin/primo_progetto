@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-5@()=gl531d9m3y7yux6o!k@8f5q2&hhv3!4_tao6seef9_4tz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'prima_app',
 ]
-
+#mancioooooo
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
