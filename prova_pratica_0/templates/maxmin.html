@@ -1,0 +1,32 @@
+{%extends "base.html"%}
+{%block title%} {{block.super}} | Index {%endblock title%}
+
+{%block content%} 
+    
+    <h1>Somma</h1>
+
+    {% if num1 > num2 %}
+        <p style="color:red;">{{num2}}</p>
+        <p> + </p>
+        <p style="color: green;">{{num1}}</p>
+        <p> = </p>
+        <p>{{somma}}</p>
+    
+    {% elif num1 < num2 %}
+        <p style="color:red;">{{num1}}</p>
+        <p> + </p>
+        <p style="color: green;">{{num2}}</p>
+        <p> = </p>
+        <p>{{somma}}</p>
+
+    {% else %}
+        <p>{{num1}}</p> 
+        <p> + </p>
+        <p>{{num2}}</p>
+        <p> = </p>
+        <p>{{somma}}</p>
+
+    {% endif %}
+
+
+{%endblock content%}

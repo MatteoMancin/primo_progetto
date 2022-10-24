@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+{%block title%} {{block.super}} | Index {%endblock title%}
+
+{%block content%} 
+
+    <h1>Media</h1>
+
+    {% for i in lista %}
+        {{i}}
+    {% endfor %}
+
+    {% if media < 6 %}
+        <p style="color:red;">{{media}}</p>
+    {% elif media > 6 %}
+        <p style="color:green;">{{media}}</p>
+    {% else %}
+        <p>{{media}}</p>
+    {% endif %}
+
+{%endblock content%}
