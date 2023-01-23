@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}
+    studenti
+{% endblock title %}
+{% block content %}
+    <h4>Studenti: </h4>
+    <br>
+        {% for studente in studenti %}
+            <p><strong>Nominativo: </strong>{{studente.nome}} {{studente.cognome}}  <a href="/prova_pratica_1/studenti/{{studente.id}}">clicca per vedere le verifica</a></p>
+            <hr>
+        {% endfor %}
+
+{% endblock content %}

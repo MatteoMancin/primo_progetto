@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}
+    Verifica {{verifiche.id}}
+{% endblock title %}
+{% block content %}
+
+    <p><strong>Materia: </strong> {{verifiche.materia}}</p>
+    <p><strong>Voto: </strong> {{verifiche.voto}}</p>
+    <p><strong>Studente: </strong> {{verifiche.studente}}</p>
+
+{%endblock content%}

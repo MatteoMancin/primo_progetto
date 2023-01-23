@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+    Lista Verifiche
+{% endblock title %}
+{% block content %}
+    <h4>Verifiche: </h4>
+   
+    {% for verifica in verifiche %}
+        <p><strong>Meteria:</strong> <a href="/prova_pratica_1/verifica/{{verifiche.id}}">{{ verifiche.materia }}</a> </p>
+        <p><strong>Voto:</strong>{{ verifiche.voto }}</p>
+        <p><strong>Studente:</strong>{{ verifiche.studente }}</p>
+        <hr>
+    {% endfor %}
+
+{%endblock content%}
