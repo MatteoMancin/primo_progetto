@@ -10,7 +10,7 @@ Tabella Giornalisti
 
 <script>
 
-    const url = "http://mancinmatteo.eu.pythonanywhere.com/news/giornalisti_list_api/";
+    const url = "http://mancinmatteo.eu.pythonanywhere.com/news/articoli_list_api/";
 
     (async function () {
 
@@ -19,7 +19,7 @@ Tabella Giornalisti
 
         console.log(result);
 
-        let tabella = "<table class='table table-striped table-hover'><tr><th>Nome</th><th>Cognome</th></tr>";
+        let tabella = "<table class='table table-striped table-hover'><tr><th>Titolo</th><th>Contenuto</th></tr>";
         
         for (const data in result) {
             
@@ -27,8 +27,8 @@ Tabella Giornalisti
 
             for (let i = 0; i < result[data].length; i++) {
                 tabella += "<tr>";
-                tabella += `<td>${result[data][i].nome}</td>`;
-                tabella += `<td>${result[data][i].cognome}</td>`;
+                tabella += `<td>${result[data][i].titolo}</td>`;
+                tabella += `<td>${result[data][i].contenuto}</td>`;
                 tabella += "</tr>";
             }
         
@@ -42,4 +42,3 @@ Tabella Giornalisti
 </script>
 
 {%endblock script%}
-

@@ -10,7 +10,7 @@ from django.http import JsonResponse
 #     g = ""
 
 #     for art in Articolo.objects.all():
-#         a += (art.titolo + "<br>")
+#         a += (art.titolo + "<br>")dxc
     
 #     for gio in Giornalista.objects.all():
 #         g += (gio.nome + "<br>")
@@ -119,3 +119,10 @@ def articolo_api(request, pk):
             }},
            status = 404)
     return response
+
+def tabella_giornalisti(request):
+    return render(request, "tabella_giornalisti.html")
+
+def tabella_articoli(request):
+    return render(request, "tabella_articoli.html")
+
